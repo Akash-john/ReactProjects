@@ -9,6 +9,7 @@ export default function App() {
   const [usersList, setUsersList] = useState([]);
 
   const addUserHandler = (uName, uAge) => {
+    console.log(uName, uAge);
     setUsersList((prevUsers) => {
       return [
         ...prevUsers,
