@@ -121,8 +121,8 @@ const App = () => {
 
   return (
     <Container>
+      <Navbar>MOVIE LIST</Navbar>
       <AddMovie onAddMovie={addMovieHandler} />
-
       <Button onClick={fetchMovies}>Fetch Movies</Button>
       {content}
     </Container>
@@ -147,4 +147,14 @@ const Button = styled.button`
   border-color: white;
   width: 25%;
   font-size: larger;
+`;
+
+const Navbar = styled.nav`
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  background-color: black;
 `;
